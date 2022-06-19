@@ -1,1 +1,1 @@
-dotnet publish /p:SelfContained=true -r win-x64 -c release
+dotnet publish --self-contained -p:PublishTrimmed=true -r win-x64 -c release

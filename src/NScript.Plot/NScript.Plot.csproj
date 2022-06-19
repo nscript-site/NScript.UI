@@ -10,4 +10,8 @@
     <PackageReference Include="Geb.Image" Version="6.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NScript.UI\NScript.UI.csproj" />
+  </ItemGroup>
+
 </Project>

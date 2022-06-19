@@ -1,0 +1,11 @@
+<Directives>
+  <Application>
+	<!-- <Assembly Name="SharpDX" Dynamic="Required All"></Assembly> -->
+	  <Assembly Name="SharpDX.Direct2D1" Dynamic="Required All"></Assembly>
+	  <!-- <Assembly Name="SharpDX.Direct3D11" Dynamic="Required All"></Assembly> -->
+	  <!-- <Assembly Name="SharpGen.Runtime" Dynamic="Required All"></Assembly> -->
+	  <!-- <Assembly Name="ExCSS" Dynamic="Required All"></Assembly>
+	<Assembly Name="NScript.UI" Dynamic="Required All"></Assembly>
+	<Assembly Name="NScript.UI.D2D" Dynamic="Required All"></Assembly> -->
+  </Application>
+</Directives>

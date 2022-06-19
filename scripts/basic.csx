@@ -1,13 +1,13 @@
 #load "common.csx"
 
-using Geb.UI;
-using Geb.UI.Media;
-using Geb.UI.Controls;
-using Geb.UI.Input;
+using NScript.UI;
+using NScript.UI.Media;
+using NScript.UI.Controls;
+using NScript.UI.Input;
 
 App.Name = "测试";
-Geb.UI.D2D.D2DPlatform.IsLoggerEnable = true;
-Geb.UI.D2D.D2DPlatform.Init();
+NScript.UI.D2D.D2DPlatform.IsLoggerEnable = true;
+NScript.UI.D2D.D2DPlatform.Init();
 Window window = new Window(600,400,App.Name);
 
 UIElement ui = new UIElement
@@ -39,4 +39,4 @@ bool RenderLoop(Window wd)
     return true;
 }
 
-window.ShowDialog(3);
+window.ShowDialog(0, RenderLoop);

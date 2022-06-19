@@ -17,7 +17,7 @@
             Window window = new Window(width, height, title);
             ImageView img = new ImageView
             {
-                Size = new SizeF(width, height),
+                Size = new NScript.UI.Media.SizeF(width, height),
                 Image = image
             };
             window.Add(img);
