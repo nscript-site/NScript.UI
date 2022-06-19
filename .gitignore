@@ -1,0 +1,14 @@
+.vs/
+obj
+Debug
+Release
+Publish
+Native
+
+lib/SharpGen.Runtime.COM.dll
+scripts/log_ui.txt
+*.nupkg
+scripts/.vscode/launch.json
+scripts/omnisharp.json
+scripts/data/mri_128-250-160.raw,scripts/data/Head_256x256x256.raw
+*.raw

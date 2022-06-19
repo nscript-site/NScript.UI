@@ -1,0 +1,9 @@
+﻿.container_default{
+    background-color:#ffffff;
+    border:1px solid #808080;
+}
+
+.textblock_default {
+    background-color: transparent;
+    padding: 5px;
+}

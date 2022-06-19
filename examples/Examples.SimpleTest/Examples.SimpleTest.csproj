@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\NScript.UI.D2D\NScript.UI.D2D.csproj" />
+    <ProjectReference Include="..\..\src\NScript.UI\NScript.UI.csproj" />
+    <ProjectReference Include="..\Examples.Common\Examples.Common.csproj" />
+  </ItemGroup>
+
+</Project>
