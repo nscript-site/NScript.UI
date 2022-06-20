@@ -1,0 +1,10 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:c="clr-namespace:NScript.Controls"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="NScript.Windows.ImageWindow" Background="#CCCCCC"
+        Title="ImageWindow" Padding="5">
+	<c:SkiaImage Stretch="Uniform" MinHeight="600" MinWidth="600" x:Name="img"></c:SkiaImage>
+</Window>

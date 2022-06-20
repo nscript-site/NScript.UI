@@ -1,11 +1,22 @@
-#load "common.csx"
+#r "nuget: NScript.Plot, 6.0.1"
 
-using Geb.Image;
+using SkiaSharp;
 using NScript.Plot;
 
-// App.Name = "测试";
-NScript.UI.D2D.D2DPlatform.IsLoggerEnable = true;
-NScript.UI.D2D.D2DPlatform.Init();
-var image = new Geb.Image.ImageBgra32(300,300);
-image.Fill(Geb.Image.Bgra32.GREEN);
-image.ShowDialog("image");
+//@main
+SKBitmap bmp = new SKBitmap(400, 600);
+bmp.UseCanvas(c => c.Clear(SKColors.Red)).Show();
+bmp.UseCanvas(c => c.Clear(SKColors.Blue)).Show();
+
+// 测试显示序列图像
+int idx = 0;
+Func<SKBitmap> g = ()=>{
+    idx+=5;
+    SKBitmap bmp2 = new SKBitmap(400, 600);
+    Byte val = (Byte)(idx % 255);
+    Console.WriteLine(val);
+    bmp2.UseCanvas(c => c.Clear(new SKColor(val,val,val,0xFF)));
+    return bmp2;
+};
+
+g.Show("序列图像");

@@ -1,1 +1,1 @@
-nuget pack gebimage.nuspec
+nuget pack nscript-plot.nuspec
